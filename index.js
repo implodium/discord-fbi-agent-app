@@ -11,10 +11,10 @@ client.on('ready', () => {
 
 client.on('guildMemberRemove', member => {
     member.guild.systemChannel.send(`<@${member.id}> just left the server`)
-        .then(console.log)
+        .catch(console.log)
 })
 
 client.on('guildMemberAdd', member => {
     member.guild.systemChannel.send(`<@${member.id}> just joined the server`)
-        .then(console.log)
+        .catch(console.log)
 })
