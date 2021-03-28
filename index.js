@@ -10,7 +10,7 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberRemove', member => {
-    member.guild.systemChannel.send(`<@${member.id}> just left the server`)
+    member.guild.systemChannel.send(`<@${member.id}>(${member.displayName}) just left the server`)
         .catch(console.log)
 })
 
